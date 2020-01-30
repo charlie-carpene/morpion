@@ -7,5 +7,8 @@ require 'board'
 require 'player'
 require 'game'
 
+new = Game.new
+new.start
+
 binding.pry
 puts "end of file"
