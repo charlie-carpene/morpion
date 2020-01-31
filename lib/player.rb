@@ -6,11 +6,11 @@ class Player
     @value = get_value
   end
 
-  def show_player_name
+  def show_player_name #actually not used since .name works the same way
     return self.name
   end
 
-  def show_player_value
+  def show_player_value #actually not used since .value works the same way
     return self.value
   end
 end

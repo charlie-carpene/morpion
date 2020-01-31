@@ -7,8 +7,8 @@ require 'board'
 require 'player'
 require 'game'
 
-new = Game.new
-new.start
+new = Game.new #start a new game
+new.start #initialise to know which player starts
 
 binding.pry
 puts "end of file"
