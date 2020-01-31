@@ -26,13 +26,12 @@ class Game
 
   def turn
     @rand_num
-    @board.show_board
     if @rand_num % 2 == 0 #depending on the random number, shows who needs to play
       puts "A toi de jouer #{@array_players[0].name} (ex : A1)"
       print "> "
       @id_beeing_played = gets.chomp #the the input of the player
       @board.board_array.each do |board_case| #go throught the board to get each board_case value
-        if board_case.id == @id_beeing_played #check if the input of the player is similar to one of the board_case value
+        if board_case.id == @id_beeing_played #check if the input of the player is similar to one of the board_case value, apparrently doesn't work..^^
           @board.board_array << board_case.value = @array_players[0].value #change the value of the board_case
         end
       end
@@ -47,6 +46,7 @@ class Game
       end
 
     end
+    @board.show_board #show the board after updating the players choice
     @rand_num = @rand_num + 1 #add +1 to the random number to change player for the next turn
   end
 end

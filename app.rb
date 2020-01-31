@@ -9,6 +9,7 @@ require 'game'
 
 new = Game.new #start a new game
 new.start #initialise to know which player starts
+new.turn #start a turn
+new.turn #start a turn
 
-binding.pry
-puts "end of file"
+puts "end of the game"
